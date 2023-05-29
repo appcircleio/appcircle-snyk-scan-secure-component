@@ -29,7 +29,7 @@ npm install -g ${packages}
 snyk auth ${AC_SNYK_AUTH_TOKEN}
 
 [[ ! -z "$AC_SNYK_ORGANIZATION" ]] && org_arg="--org=${AC_SNYK_ORGANIZATION}"
-[[ ! -z "$AC_SNYK_ADD_ARG" ]] && additional_arguments="--org=${AC_SNYK_ADD_ARG}"
+[[ ! -z "$AC_SNYK_ADD_ARG" ]] && additional_arguments="${AC_SNYK_ADD_ARG}"
 
 if [[ "${AC_SNYK_FAIL_ON_ISSUES}" == "yes" ]]; then
     run_test "${command_to_use}" ${AC_SNYK_SEVERITY_THRESHOLD} ${AC_SNYK_CREATE_REPORT} ${additional_arguments}

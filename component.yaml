@@ -86,7 +86,7 @@ outputs:
   helpText:
 - key: "AC_SNYK_MONITOR_EXPLORE_LINK"
   title: Snyk Monitor Explore Link
-  defaultValue: "AC_TEST_RESULT_PATH"
+  defaultValue: "AC_SNYK_MONITOR_EXPLORE_LINK"
   description: "The link where the project result is monitored."
   helpText:
 processFilename: bash

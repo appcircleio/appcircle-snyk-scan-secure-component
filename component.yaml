@@ -8,6 +8,16 @@ inputs:
   isRequired: true
   title: Repository Directory
   description: Specifies the cloned repository directory.
+  helpText:
+- key: "AC_SNYK_ORGANIZATION"
+  defaultValue: "$AC_SNYK_ORGANIZATION"
+  isRequired: true
+  title: Organization
+  description: |
+        Name of the Snyk organisation name, under which this project should be tested and monitored.
+
+        If omitted the default organization will be used.
+  helpText:
 - key: "AC_SNYK_AUTH_TOKEN"
   defaultValue: "$AC_SNYK_AUTH_TOKEN"
   isRequired: true
@@ -61,15 +71,6 @@ inputs:
 
         Set this value to `yes` to import the snapshot of dependencies to Snyk after a successful test. Snyk will then start monitoring the dependencies for new vulnerabilities and alert when a new vulnerability is discovered.
   options: "yes,no"
-  helpText:
-- key: "AC_SNYK_ORGANIZATION"
-  defaultValue: "$AC_SNYK_ORGANIZATION"
-  isRequired: true
-  title: Organization
-  description: |
-        Name of the Snyk organisation name, under which this project should be tested and monitored.
-
-        If omitted the default organization will be used.
   helpText:
 - key: "AC_SNYK_ADD_ARG"
   defaultValue: "$AC_SNYK_ADD_ARG"

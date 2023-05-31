@@ -66,6 +66,7 @@ inputs:
   isRequired: false
   editorType: select
   title: Monitor (Import to Snyk)
+  helpText:
   description: |
         If enabled, imports the snapshot of dependencies to Snyk for continuous monitoring after a successful test.
 

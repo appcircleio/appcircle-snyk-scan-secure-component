@@ -1,6 +1,6 @@
 platform: Common
 buildPlatform:
-displayName: Appcircle Snyk Scan Security
+displayName: Snyk Scan Security
 description: "By utilizing this step, you will be able to test your project dependencies for vulnerabilities during builds and use Snyk to monitor your projects."
 inputs:
 - key: "AC_REPOSITORY_DIR"

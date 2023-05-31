@@ -1,4 +1,4 @@
-# Appcircle _Appcircle Snyk Scan Security Component_ component
+# Appcircle _Snyk Scan Security_ component
 
 By utilizing this step, you will be able to test your project dependencies for vulnerabilities during builds and use Snyk to monitor your projects.
 

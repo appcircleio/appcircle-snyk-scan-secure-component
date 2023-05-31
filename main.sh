@@ -40,5 +40,5 @@ fi
 if [[ "${AC_SNYK_MONITOR}" == "yes" ]]; then
     cd $AC_REPOSITORY_DIR
     MONITOR_EXPLORE=`snyk monitor ${org_arg} ${additional_arguments}`
-    echo "${MONITOR_EXPLORE}"|grep -Eo 'https://[^ >]+'|head -1 >> $AC_ENV_FILE_PATH
+    echo "AC_MONITOR_EXPLORE_LINK=`echo "${MONITOR_EXPLORE}"|grep -Eo 'https://[^ >]+'|head -1`" >> $AC_ENV_FILE_PATH
 fi
